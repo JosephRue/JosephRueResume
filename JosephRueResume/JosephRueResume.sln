@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3D13A61F-15B7-42D4-8114-FD643904FDD5}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "JosephRueResume", "src\JosephRueResume\JosephRueResume.xproj", "{BD2670E0-2F5A-4976-B4BA-D066CB2C77C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD2670E0-2F5A-4976-B4BA-D066CB2C77C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2670E0-2F5A-4976-B4BA-D066CB2C77C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2670E0-2F5A-4976-B4BA-D066CB2C77C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD2670E0-2F5A-4976-B4BA-D066CB2C77C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BD2670E0-2F5A-4976-B4BA-D066CB2C77C8} = {3D13A61F-15B7-42D4-8114-FD643904FDD5}
+	EndGlobalSection
+EndGlobal
