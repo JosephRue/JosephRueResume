@@ -18,17 +18,18 @@
             @Html.DisplayFor(model => model.CompanyName)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.EndDate)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.EndDate)
-        </dd>
-        <dt>
             @Html.DisplayNameFor(model => model.StartDate)
         </dt>
         <dd>
             @Html.DisplayFor(model => model.StartDate)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.jobTitle)
         </dt>
@@ -36,7 +37,7 @@
             @Html.DisplayFor(model => model.jobTitle)
         </dd>
     </dl>
-    
+
     <form asp-action="Delete">
         <div class="form-actions no-color">
             <input type="submit" value="Delete" class="btn btn-default" /> |
