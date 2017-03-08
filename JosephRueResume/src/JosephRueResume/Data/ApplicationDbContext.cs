@@ -24,5 +24,6 @@ namespace JosephRueResume.Data
         }
 
         public DbSet<jobs> jobs { get; set; }
+        public DbSet<ContactInfo> ContactInfo { get; set; }
     }
 }
