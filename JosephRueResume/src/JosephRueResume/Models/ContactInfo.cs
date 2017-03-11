@@ -19,7 +19,9 @@ namespace JosephRueResume.Models
         [Column("FirstName")]
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
+        [Display(Name ="Phone Number")]
         public string PhoneNumber { get; set; }
+        [Display(Name ="Street Address")]
         public string StreetAddress { get; set; }
         public string Zip { get; set; }
         public string City { get; set; }
