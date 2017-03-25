@@ -8,9 +8,10 @@ using JosephRueResume.Data;
 namespace JosephRueResume.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170311165207_References")]
+    partial class References
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")
@@ -116,8 +117,6 @@ namespace JosephRueResume.Data.Migrations
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Emailaddress");
 
                     b.Property<string>("FirstName");
 

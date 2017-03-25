@@ -8,9 +8,10 @@ using JosephRueResume.Data;
 namespace JosephRueResume.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170308035001_ContactInfo2")]
+    partial class ContactInfo2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")
@@ -110,26 +111,6 @@ namespace JosephRueResume.Data.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("jobs");
-                });
-
-            modelBuilder.Entity("JosephRueResume.Models.References", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Emailaddress");
-
-                    b.Property<string>("FirstName");
-
-                    b.Property<string>("LastName");
-
-                    b.Property<string>("PhoneNumber");
-
-                    b.Property<string>("Relationship");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("References");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole", b =>

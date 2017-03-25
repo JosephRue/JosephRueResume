@@ -8,9 +8,10 @@ using JosephRueResume.Data;
 namespace JosephRueResume.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170308034312_ContactInfo")]
+    partial class ContactInfo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")
@@ -65,35 +66,6 @@ namespace JosephRueResume.Data.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("JosephRueResume.Models.ContactInfo", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("City");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnName("FirstName")
-                        .HasAnnotation("MaxLength", 50);
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasAnnotation("MaxLength", 50);
-
-                    b.Property<string>("PhoneNumber");
-
-                    b.Property<string>("State");
-
-                    b.Property<string>("StreetAddress");
-
-                    b.Property<string>("Zip");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("ContactInfo");
-                });
-
             modelBuilder.Entity("JosephRueResume.Models.jobs", b =>
                 {
                     b.Property<int>("ID")
@@ -110,26 +82,6 @@ namespace JosephRueResume.Data.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("jobs");
-                });
-
-            modelBuilder.Entity("JosephRueResume.Models.References", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Emailaddress");
-
-                    b.Property<string>("FirstName");
-
-                    b.Property<string>("LastName");
-
-                    b.Property<string>("PhoneNumber");
-
-                    b.Property<string>("Relationship");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("References");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.EntityFrameworkCore.IdentityRole", b =>
